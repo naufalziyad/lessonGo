@@ -41,5 +41,12 @@ func main() {
 
 	fmt.Println("------------------------- \nRegex Replace All String Func")
 	//Regex Replace All String Funx
+	strFunc := regex.ReplaceAllStringFunc(text, func(each string) string {
+		if each == "Saya" {
+			return "Ahai"
+		}
+		return each
+	})
+	fmt.Println(strFunc)
 
 }
