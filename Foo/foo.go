@@ -10,5 +10,6 @@ func foo() {
 }
 
 func main() {
+	fmt.Println("cek")
 	foo()
 }
